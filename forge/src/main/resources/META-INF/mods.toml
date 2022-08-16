@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[41,)"
+issueTrackerURL = "https://github.com/teamfusion/example/issues"
+license = "Mit (Code); All Rights Reserved (Assets)"
+
+[[mods]]
+modId = "example"
+version = "${version}"
+displayName = "Example"
+authors = "Team Fusion"
+displayURL = "https://curseforge.com/minecraft/mc-mods/example"
+updateJSONURL = "https://gist.githubusercontent.com/andantet/1e2d4b00f3f6fa88c5118aff7d7c0f08/raw/example.json"
+description = '''
+My first description! 👶
+'''
+logoFile = "icon.png"
+
+[[dependencies.example]]
+modId = "forge"
+mandatory = true
+versionRange = "[41,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.example]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.example]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.2,)"
+ordering = "AFTER"
+side = "BOTH"

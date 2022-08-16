@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "example.mixins.json",
+    "example-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "example",
+    "version": "${version}",
+    "name": "Example",
+    "description": "My first description! 👶",
+    "authors": [
+      "Team Fusion"
+    ],
+    "contact": {
+      "sources": "https://github.com/teamfusion/example",
+      "issues": "https://github.com/teamfusion/example/issues"
+    },
+    "license": [
+      "MIT (Code)",
+      "All Rights Reserved (Assets)"
+    ],
+    "icon": "assets/example/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "com.github.teamfusion.example.quilt.ExampleQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19"
+      },
+      {
+        "id": "architectury",
+        "version": ">=6.2"
+      }
+    ]
+  }
+}

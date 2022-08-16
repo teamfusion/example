@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+
+  "id": "example",
+  "version": "${version}",
+  "license": [
+    "MIT (Code)",
+    "All Rights Reserved (Assets)"
+  ],
+
+  "name": "Example",
+  "icon": "assets/example/icon.png",
+  "description": "My first description! 👶",
+
+  "authors": [
+    "Team Fusion"
+  ],
+  "contributors": ["",
+    "John Doe"
+  ],
+  "contact": {
+    "sources": "https://github.com/teamfusion/example",
+    "issues": "https://github.com/teamfusion/example/issues"
+  },
+  "custom": {
+    "modmenu": { "links": { "mod.example.contact.discord": "https://discord.gg/wGw5N7peR7" } }
+  },
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "com.github.teamfusion.example.fabric.ExampleFabric" ],
+    "fabric-datagen": [ "com.github.teamfusion.example.datagen.ExampleDataGenerator" ]
+  },
+  "mixins": [
+    "example.mixins.json",
+    "example-common.mixins.json"
+  ],
+
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=1.19",
+    "fabricloader": ">=0.14",
+    "fabric-api": ">=0.59",
+    "architectury": ">=6.2"
+  }
+}
